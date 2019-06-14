@@ -7,7 +7,7 @@
 
 #import "UMShareModule.h"
 #import <WeexPluginLoader/WeexPluginLoader.h>
-#import <UMCCommon/UMCommon.h>
+#import <UMCommon/UMCommon.h>
 #import <UMShare/UMShare.h>
 #import <UMShare/UMSocialManager.h>
 #import <UShareUI/UShareUI.h>
