@@ -19,7 +19,7 @@
 
 WX_PlUGIN_EXPORT_MODULE(umshare, UMShareModule)
 @implementation UMShareModule
-
+@synthesize weexInstance;
 WX_EXPORT_METHOD(@selector(initUM:))
 //WX_EXPORT_METHOD(@selector(setPlatform:))
 WX_EXPORT_METHOD(@selector(initWechat:))
