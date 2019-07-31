@@ -22,7 +22,7 @@ WX_PlUGIN_EXPORT_MODULE(umshare, UMShareModule)
 
 WX_EXPORT_METHOD(@selector(initUM:))
 //WX_EXPORT_METHOD(@selector(setPlatform:))
-WX_EXPORT_METHOD(@selector(initWechat:appSecret:))
+WX_EXPORT_METHOD(@selector(initWechat:))
 WX_EXPORT_METHOD(@selector(initQQ:appSecret:))
 WX_EXPORT_METHOD(@selector(initSina:appSecret:))
 WX_EXPORT_METHOD(@selector(share:callback:))
