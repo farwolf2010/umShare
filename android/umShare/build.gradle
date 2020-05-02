@@ -24,5 +24,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.umeng.sdk:common:latest.integration'
     compile 'com.umeng.analytics:analytics:latest.integration'
-    compile project(':farwolf.weex')
+    api 'com.farwolf.weexplus:farwolf.weex:latest.integration'
 }

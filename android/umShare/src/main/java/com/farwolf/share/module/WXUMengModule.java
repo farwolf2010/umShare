@@ -1,5 +1,6 @@
 package com.farwolf.share.module;
 
+import com.alibaba.fastjson.JSONArray;
 import com.farwolf.weex.annotation.WeexModule;
 import com.farwolf.weex.base.WXModuleBase;
 import com.taobao.weex.annotation.JSMethod;
@@ -19,7 +20,6 @@ import com.umeng.socialize.shareboard.ShareBoardConfig;
 import com.umeng.socialize.shareboard.SnsPlatform;
 import com.umeng.socialize.utils.ShareBoardlistener;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -39,9 +39,9 @@ public class WXUMengModule extends WXModuleBase {
     }
     @JSMethod
     public void initWechat(HashMap param){
-            String appkey=param.get("appkey")+"";
-            String appSecret=param.get("appSecret")+"";
-            String redirectUrl=param.get("redirectUrl")+"";
+        String appkey=param.get("appkey")+"";
+        String appSecret=param.get("appSecret")+"";
+        String redirectUrl=param.get("redirectUrl")+"";
         PlatformConfig.setWeixin(appkey, appSecret);
     }
     @JSMethod
@@ -68,30 +68,36 @@ public class WXUMengModule extends WXModuleBase {
         config.setTitleVisibility(false);
         config.setCancelButtonVisibility(false);
         config.setIndicatorVisibility(false);
-        ArrayList l= (ArrayList)info.get("platforms");
+        JSONArray l = (JSONArray)info.get("platforms");
+//        ArrayList l= (ArrayList)info.get("platforms");
         new ShareAction(getActivity())
                 .setDisplayList(getPlatformList(l))
                 .setShareboardclickCallback(new ShareBoardlistener() {
 
                     @Override
                     public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
-                       share(info,callback);
+                        info.put("platform",platformToName(snsPlatform.mPlatform));
+                        share(info,callback);
                     }
                 })
                 .open(config);
     }
 
-    public SHARE_MEDIA[] getPlatformList(ArrayList l){
+    public SHARE_MEDIA[] getPlatformList(JSONArray l){
 //        ArrayList<SHARE_MEDIA> lx=new ArrayList<SHARE_MEDIA>();
-        SHARE_MEDIA lx[]=new SHARE_MEDIA[l.size()];
-        for(Object o:l){
-            SHARE_MEDIA me= getPlatform(o+"");
-            lx[l.indexOf(o)]=me;
+        int size = l.size();
+        SHARE_MEDIA lx[]=new SHARE_MEDIA[size];
+
+        for(int i=0;i<size;i++){
+            try{
+                SHARE_MEDIA me= getPlatform(l.get(i)+"");
+                lx[i]=me;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
         return lx;
     }
-
-
 
     @JSMethod
     public void share(HashMap info, JSCallback callback){

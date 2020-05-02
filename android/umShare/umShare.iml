@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":umShare" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$USER_HOME$/Desktop/xop/platforms/android/xop" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":umShare" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$USER_HOME$/Desktop/未命名文件夹/xop/platforms/android/xop" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":umShare" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/build/generated/res/rs/debug;file://$MODULE_DIR$/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes" />
     <output-test url="file://$MODULE_DIR$/build/intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes" />
@@ -63,42 +87,29 @@
       <excludeFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources" />
       <excludeFolder url="file://$MODULE_DIR$/build/generated/source/r" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/aapt_friendly_merged_manifests" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotation_processor_list" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotations_typedef_file" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotations_zip" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/consumer_proguard_file" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/library_and_local_jars_jni" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/library_assets" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/packaged-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/packaged_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/public_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shader_assets" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: cn.finalteam:toolsfinal:1.1.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:annotations:4.2.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Desktop/xop/platforms/android/farwolf/libs/volley.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.taobao.android:weex_analyzer:0.1.0.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.alibaba.android:bindingx_weex_plugin:1.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.taobao.android.weex_inspection:urlconnection_interceptor:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Documents/GitHub/weexplus-plugins/umShare/android/umShare/libs/umeng_social_tool.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.androidannotations:androidannotations-api:4.5.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Desktop/未命名文件夹/xop/platforms/android/farwolf/libs/httpmime-4.1.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.test.espresso:espresso-idling-resource:2.2.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Desktop/未命名文件夹/xop/platforms/android/farwolf/libs/calcite-linq4j-1.2.0.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:26.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:gifdecoder:4.2.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.0.0@aar" level="project" />
@@ -106,7 +117,6 @@
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.14.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.0.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Desktop/xop/platforms/android/farwolf/libs/httpmime-4.1.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Documents/GitHub/weexplus-plugins/umShare/android/umShare/libs/SocialSDK_QQ_Simplify.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:26.1.0@aar" level="project" />
@@ -116,6 +126,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:4.2.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:26.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Desktop/未命名文件夹/xop/platforms/android/farwolf/libs/volley.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Documents/GitHub/weexplus-plugins/umShare/android/umShare/libs/SocialSDK_tencentWB.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Documents/GitHub/weexplus-plugins/umShare/android/umShare/libs/SocialSDK_Sina_Simplify.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Documents/GitHub/weexplus-plugins/umShare/android/umShare/libs/umeng_social_net.jar:unspecified@jar" level="project" />
@@ -127,7 +138,6 @@
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp:okhttp:2.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:26.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/zhengjiangrong/Desktop/xop/platforms/android/farwolf/libs/calcite-linq4j-1.2.0.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp:okhttp-ws:2.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.umeng.analytics:analytics:6.1.4@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:transition:26.1.0@aar" level="project" />
@@ -153,10 +163,10 @@
     <orderEntry type="library" name="Gradle: com.alibaba.android:bindingx-core:1.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:multidex:1.0.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.umeng.sdk:common:1.5.3@jar" level="project" />
-    <orderEntry type="module" module-name="galleryfinal" />
-    <orderEntry type="module" module-name="farwolf" />
-    <orderEntry type="module" module-name="farwolf.business" />
     <orderEntry type="module" module-name="sdk" />
+    <orderEntry type="module" module-name="farwolf.business" />
+    <orderEntry type="module" module-name="galleryfinal" />
     <orderEntry type="module" module-name="farwolf.weex" />
+    <orderEntry type="module" module-name="farwolf" />
   </component>
 </module>
